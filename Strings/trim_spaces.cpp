@@ -19,3 +19,24 @@ void trimSpaces(char input[]) {
         }
     }
 }
+
+// OR
+
+
+void trimSpaces(char input[]) {
+    int i=0;
+    char arr[100000];
+    int k=0;
+    while(input[i]!='\0'){
+        if(input[i]!=' '){
+            arr[k]=input[i];
+            k++;
+        }
+        i++;
+    }
+    i=0;
+	while(arr[i]!='\n'){
+        input[i]=arr[i];
+        i++;
+    }
+}
